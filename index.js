@@ -27,10 +27,16 @@ function calculate() {
     switch (currentOperation) {
         case '+':
             result = prev + current;
+            break
         case '-':
             result = prev - current;
             break;
-            break;
+        case '/':
+            if (current === 0) {
+                alert("Cannot divide by zero");
+                return;
+            }
+            result = prev / current;
         default:
             return;
     }
