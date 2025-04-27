@@ -25,6 +25,7 @@ function calculate() {
     let current = parseFloat(currentInput);
 
     switch (currentOperation) {
+<<<<<<< HEAD
         //Adding the mlitplication code
         case '*':
             result = prev * current;
@@ -32,6 +33,24 @@ function calculate() {
         default:
             return;
     }
+=======
+        case '+':
+            result = prev + current;
+            break
+        case '-':
+            result = prev - current;
+            break;
+        case '/':
+            if (current === 0) {
+                alert("Cannot divide by zero");
+                return;
+            }
+            result = prev / current;
+        default:
+            return;
+    }
+
+>>>>>>> 76503e8acec45f5e1830d9e5440f2c525d17a56a
     currentInput = result.toString();
     currentOperation = '';
     previousInput = '';
