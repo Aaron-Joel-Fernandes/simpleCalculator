@@ -27,6 +27,9 @@ function calculate() {
     switch (currentOperation) {
         case '+':
             result = prev + current;
+        case '-':
+            result = prev - current;
+            break;
             break;
         default:
             return;
