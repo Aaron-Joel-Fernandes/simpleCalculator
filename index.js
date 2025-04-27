@@ -25,6 +25,7 @@ function calculate() {
     let current = parseFloat(currentInput);
 
     switch (currentOperation) {
+        //Adding the mlitplication code
         case '*':
             result = prev * current;
             break;
