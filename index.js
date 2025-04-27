@@ -19,7 +19,22 @@ function appendOperation(operation) {
 }
 
 function calculate() {
-   
+    if (previousInput === '' || currentInput === '') return;
+    let result;
+    let prev = parseFloat(previousInput);
+    let current = parseFloat(currentInput);
+
+    switch (currentOperation) {
+        case '*':
+            result = prev * current;
+            break;
+        default:
+            return;
+    }
+    currentInput = result.toString();
+    currentOperation = '';
+    previousInput = '';
+    document.getElementById('display').value = currentInput;
     
 }
 
