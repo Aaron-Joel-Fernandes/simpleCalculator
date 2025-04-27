@@ -25,6 +25,15 @@ function calculate() {
     let current = parseFloat(currentInput);
 
     switch (currentOperation) {
+<<<<<<< HEAD
+        //Adding the mlitplication code
+        case '*':
+            result = prev * current;
+            break;
+        default:
+            return;
+    }
+=======
         case '+':
             result = prev + current;
             break
@@ -41,6 +50,7 @@ function calculate() {
             return;
     }
 
+>>>>>>> 76503e8acec45f5e1830d9e5440f2c525d17a56a
     currentInput = result.toString();
     currentOperation = '';
     previousInput = '';
